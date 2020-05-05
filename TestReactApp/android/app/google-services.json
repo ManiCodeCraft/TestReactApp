@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "767185089635",
+    "firebase_url": "https://testreactapp-53557.firebaseio.com",
+    "project_id": "testreactapp-53557",
+    "storage_bucket": "testreactapp-53557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767185089635:android:5dc63f4938ed4ff6193456",
+        "android_client_info": {
+          "package_name": "com.testreactapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767185089635-c7doh86aqa7lq9gh3huii9rbvmcfm01s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6b9nk4sCR2piz-kOe4emUiGMqv8kwT84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767185089635-c7doh86aqa7lq9gh3huii9rbvmcfm01s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "767185089635-tqb5iuh0ai159rtbfs9d1t850p2q7ftt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.TestReactApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.testreactapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Step 1: Add the following permission to the app  -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <!-- Define ACCESS_FINE_LOCATION if you will use enableHighAccuracy=true  -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Define ACCESS_COARSE_LOCATION if you will use enableHighAccuracy=false  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <!-- Step 2: This permission is depreciated in Android P  -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+        android:usesCleartextTraffic="true"
+      android:theme="@style/AppTheme">
+
+        <service android:name="io.invertase.firebase.messaging.RNFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="io.invertase.firebase.messaging.RNFirebaseBackgroundMessagingService" />
+
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest>
